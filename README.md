@@ -73,8 +73,9 @@ Open a new Terminal and enter the following line:
 This will display as it is, but we will llive earn how to add customizations to it soon.
 
 Now your terminal should like this
-
-![screenshot simple postscript](images/screenshot1.jpg)
+<div style="text-align:center;">
+    <img src='./images/screenshot1.png' width="360" />
+</div>
 
 #### <a name="customizations_editing_in_bashrc">In .bashrc</a>
 
@@ -99,7 +100,9 @@ will show the current working directory. To show the complete/absolute path we c
     $ PS1='\w > '
 ```
 
-![Absolute Working Path]("images/Screenshot from 2019-02-20 02-07-08.png")
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 02-07-08.png">
+</div>
 
 * There are a lot more sequences, but are not required for our purpose. To see a full list [visit this link](http://tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html)
 
@@ -121,7 +124,9 @@ e.g, see the below line
 ```bash
     $ PS1='\[\e[31m\]\W > '
 ```
-![changing forecolor to red]("images/Screenshot from 2019-02-20 12-19-34.png")
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 12-19-34.png">
+</div>
 
 Here color `\e` is an escape sequence with octal value `\033`, which makes sure that the given sequence should be interpreted as a special value.
 
@@ -148,7 +153,9 @@ There are some predefined color sequences that can be used to provide a backgrou
    $ PS1='\[\e[42m\]\W > '
 ```
 
-![Background Color]('images/Screenshot from 2019-02-20 17-28-24.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 17-28-24.png">
+</div>
 
 Color Name | Code 
 -----------|-----
@@ -171,7 +178,9 @@ You can also combine foreground and background values. Just add them before the 
 
 here `37` is for foreground and `41` represents background color.
 
-![composed Values]('images/Screenshot from 2019-02-20 18-59-19.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 18-59-19.png">
+</div>
 
 #### <a name="customizations_color_stop_propagation">Stoping the Propagation</a> 
 
@@ -217,7 +226,9 @@ e.g.
     PS1='\[\e[38;2;145;255;45m\]\[\e[48;2;124;37;198m\]\W >\[\e[0m\]'
 ```
 
-![prompt rgb foreground and background]('images/Screenshot from 2019-02-20 19-20-09.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-20-09.png">
+</div>
 
 ### <a name="customizations_some_tweaks">Some tweaks</a>
 
@@ -227,23 +238,27 @@ e.g.
 ```bash
     $ PS1='\[\e[1m\] \W $\[\e[0m\]'
 ```
-![Bold Prompt]('images/Screenshot from 2019-02-20 19-25-27.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-25-27.png">
+</div>
 
 * <a name="customizations_some_tweaks_italic">__Italic__</a>. `\[\e[3m\]`
 
 ```bash
     $ PS1='\[\e[3m\] \W $\[\e[0m\]'
 ```
-
-![Italic text]('images/Screenshot from 2019-02-20 19-31-35.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-31-35.png">
+</div>
 
 * <a name="customizations_some_tweaks_underline">__Underline__</a>. `\[\e[4m\]`
 
 ```bash
     $ PS1='\[\e[4m\] \W $\[\e[0m\]'
 ```
-
-![Underline Text]('images/Screenshot from 2019-02-20 19-34-34.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-34-34.png">
+</div>
 
 * <a name="customizations_some_tweaks_strikethrough">__Striketrough__</a>. `\[\e[9m\]`
 
@@ -251,20 +266,25 @@ e.g.
     $ PS1='\[\e[9m\] \W $\[\e[0m\]'
 ```
 
-![Strikethrough Text]('images/Screenshot from 2019-02-20 19-36-35.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-36-35.png">
+</div>
 
 * <a name="customizations_some_tweaks_blinking_text">__Blinking Text__</a>. `\[\e[\5m]`
 
 ```bash
     $ PS1='\[\e[5m\] \W $\[\e[0m\]'
 ```
+
 * <a name="customizations_some_tweaks_composed">__Composed__</a>. It also possible to combine various codes. Just seperate them by semi-colon as shown below.
 
 ```bash
     $ PS1='\[\e[1;3;9m\]'
 ```
 
-![Promp Bold, Italic and Strikethrough]('images/Screenshot from 2019-02-20 19-42-09.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 19-44-27.png">
+</div>
 
 ### <a name="customizations_adding_icons">Adding Unicode Icons to prompt</a>
 
@@ -277,7 +297,9 @@ Icons are added to the terminal as unicode characters. There are two approaches 
     $ PS1="🎭 > "
 ```
 
-![icons in prompt]('images/Screenshot from 2019-02-20 21-31-04.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 21-31-04.png">
+</div>
 
 This is an emoji that i have copied as such from [emojipedia](https://emojipedia.org/activity/). You can put any emoji that you like.
 
@@ -288,8 +310,9 @@ e.g
 ```bash
     $ PS1=' \360\237\216\255 $ '
 ```
-
-![icons using octals]('images/Screenshot from 2019-02-20 21-39-21.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 21-39-21.png">
+</div>
 
 Here I find a good short hand on [StackOverflow](https://stackoverflow.com/a/5760420) to convert the icon to its equivalent hex-code.
 
@@ -307,9 +330,9 @@ Your `PS` may soon become cumbersome and hard to read once you start adding more
 ```bash
     $ PS1='\360\237\216\255\[\e[1m\]\[\e[38;2;190;214;192m\]\[\e[48;2;170;111;0m\] \W \[\e[38;2;141;224;221m\]\[\e[48;2;48;135;35m\] $ \[\e[0m\]'
 ```
-
-
-![A complex ps]('images/Screenshot from 2019-02-20 22-23-55.png')
+<div style="text-align:center">
+    <img src="images/Screenshot from 2019-02-20 22-23-55.png">
+</div>
 
 There are a few ways in which `ps` can be made compact and readable
 
