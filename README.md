@@ -6,7 +6,7 @@ This repositoriy contains a list of ways in which you can customize your termina
 
 * [My Configuration](#my_configuration)
 * [Customizations](#customizations)
-    * [Editing PS1](#customization_editing)
+    * [Editing PS1](#customizations_editing)
         * [In Terminal](#customizations_editing_in_terminal)
         * [In Bashrc](#customizations_editing_in_bashrc)
     * [Escape Sequences](#customizations_escape_sequencesustomizations_escape_sequences)
